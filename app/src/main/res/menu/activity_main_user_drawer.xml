@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_all_available_courses"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/nav_all_available_courses" />
+        <item
+            android:id="@+id/nav_my_courses"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/nav_menu_my_courses" />
+        <item
+            android:id="@+id/nav_bmi_calculator"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_bmi_calculator" />
+        <item
+            android:id="@+id/nav_bmi_analyzer"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_bmi_analyzer" />
+    </group>
+</menu>

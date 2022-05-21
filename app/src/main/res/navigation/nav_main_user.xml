@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_all_available_courses">
+
+    <fragment
+        android:id="@+id/nav_all_available_courses"
+        android:name="com.fitwebappclient.usermain.ui.allavailablecourses.AllAvailableCoursesFragment"
+        android:label="@string/nav_all_available_courses"
+        tools:layout="@layout/fragment_all_available_courses" />
+
+    <fragment
+        android:id="@+id/nav_my_courses"
+        android:name="com.fitwebappclient.usermain.ui.mycourses.MyCoursesFragment"
+        android:label="@string/nav_menu_my_courses"
+        tools:layout="@layout/fragment_my_courses" />
+
+    <fragment
+        android:id="@+id/nav_bmi_calculator"
+        android:name="com.fitwebappclient.usermain.ui.bmicalculator.BmiCalculatorFragment"
+        android:label="@string/menu_bmi_calculator"
+        tools:layout="@layout/fragment_bmi_calculator" />
+
+    <fragment
+        android:id="@+id/nav_bmi_analyzer"
+        android:name="com.fitwebappclient.usermain.ui.bmianalyzer.BmiAnalyzerFragment"
+        android:label="@string/menu_bmi_analyzer"
+        tools:layout="@layout/fragment_bmi_analyzer" />
+</navigation>

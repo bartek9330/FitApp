@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_manager_course_graph"
+    app:startDestination="@id/manageCourseFragment">
+
+    <fragment
+        android:id="@+id/manageCourseFragment"
+        tools:layout="@layout/fragment_manage_course"
+        android:name="com.fitwebappclient.adminmain.ui.allcourses.managecourse.ui.ManageCourseFragment"
+        android:label="@string/create_new_course" >
+        <action
+            android:id="@+id/action_manageCourseFragment_to_manageStep"
+            app:destination="@id/manageStep" />
+    </fragment>
+    <fragment
+        android:id="@+id/manageStep"
+        android:name="com.fitwebappclient.adminmain.ui.allcourses.managecourse.ui.managestep.ManageStepFragment"
+        android:label="fragment_manage_step"
+        tools:layout="@layout/fragment_manage_step" >
+        <action
+            android:id="@+id/action_manageStep_to_manageCourseFragment"
+            app:destination="@id/manageCourseFragment" />
+    </fragment>
+</navigation>
